@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <section class="bg-light shadow mx-auto" style="max-width: 640px;">
-        <div class="container">
+    <section class="bg-light shadow mx-auto" style="max-width: 640px; overflow-x: hidden;">
+        <div class="container-fluid">
             <div class="row text-light bg-primary pt-2">
                 <div class="col-7 col-sm-5 col-md-4 col-lg-4">
                     <header><i class="fab fa-node-js d-inline-block" style="padding-right: 0.25em; font-size: 1.25em;"></i>
@@ -23,17 +23,14 @@
             </div>
             <div class="row bg-white">
                 <div class="col-md-4 col-lg-4 text-light d-none d-md-block bg-secondary">
-                    <h2 id="room-name" class="h6 mt-3 mb-0">General Channel</h2>
-                    <h3 class="h6 small mt-3"><i class="fas fa-user" style="padding-right: 0.5em;"></i><span><strong>Online users:</strong></span></h3>
+                    <h2 id="room-name" class="h6 mt-3 mb-0">General Room</h2>
+                    <h3 class="h6 small mt-3"><i class="fas fa-user" style="padding-right: 0.5em;"></i><span><strong>Online users:</strong></span><span class="badge rounded-pill bg-light text-secondary" id="user-count" style="margin-left: 0.25em;">42</span></h3>
                     <ul class="list-unstyled small" id="users">
-                        <li>User1</li>
-                        <li>User2</li>
-                        <li>User3</li>
-                        <li>User 4</li>
+                        <li>New User</li>
                     </ul>
                 </div>
                 <div class="col">
-                    <div class="chat-messages" style="min-height: 60vh;"></div>
+                    <div class="chat-messages"></div>
                 </div>
             </div>
         </div>

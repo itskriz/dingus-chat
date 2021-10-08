@@ -66,3 +66,15 @@
   text-align: right;
 }
 
+@media (min-width: 768px) {
+  .chat-messages {
+    max-height: 60vh;
+  }
+}
+
+.chat-messages {
+  height: calc(100vh - 97px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
