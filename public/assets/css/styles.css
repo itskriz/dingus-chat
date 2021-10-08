@@ -1,0 +1,30 @@
+.message {
+  width: 80%;
+}
+
+.message blockquote {
+  border-radius: 0.25rem;
+}
+
+.message-client {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.message-user {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.message p, .message span, .chat-messages .alert {
+  font-size: 0.88rem;
+}
+
+.message .blockquote-footer {
+  font-size: 0.66rem;
+}
+
+.message-client .blockquote-footer {
+  text-align: right;
+}
+

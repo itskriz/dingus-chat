@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>DingusChat</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section class="text-dark bg-light shadow mx-auto my-5 px-4 py-3" id="logon" style="max-width: 320px;">
+        <header><i class="fab fa-node-js d-inline-block text-primary" style="padding-right: 0.25em; font-size: 1.25em;"></i>
+            <h1 class="text-primary d-inline-block h3">DingusChat</h1>
+            <p class="small">Welcome! Please create a username and choose a channel to join using the form below.</p>
+        </header>
+        <form id="loginForm" action="chat.html">
+            <div class="mb-3"><label class="form-label small" for="email">Email address<small class="text-muted">&nbsp;(optional)</small></label><input class="form-control" type="email" id="email" name="email"></div>
+            <div class="mb-3"><label class="form-label small" for="username">Username</label><input class="form-control" type="text" id="username" name="username" required=""></div>
+            <div class="mb-3"><label class="form-label small" for="Room">Channel</label><select class="form-select" id="room" name="room">
+                    <option value="General">General</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Tiddies">Tiddies</option>
+                </select></div>
+            <div class="mb-2 pt-2"><button class="btn btn-primary btn-sm d-block w-100 mx-auto" type="submit">Join</button></div>
+        </form>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
