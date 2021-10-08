@@ -1,5 +1,27 @@
 .message {
   width: 80%;
+  position: relative;
+}
+
+.message blockquote {
+  transition: all 600ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.message p {
+  opacity: 1;
+  transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: 150ms;
+}
+
+.message.message--hide blockquote {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.message.message--hide p {
+  opacity: 0;
 }
 
 .message blockquote {
@@ -22,6 +44,22 @@
 
 .message .blockquote-footer {
   font-size: 0.66rem;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: 300ms;
+}
+
+.message.message--hide .blockquote-footer {
+  opacity: 0;
+}
+
+.message.message-client.message--hide .blockquote-footer {
+  transform: translateX(-5%);
+}
+
+.message.message-user.message--hide .blockquote-footer {
+  transform: translateX(5%);
 }
 
 .message-client .blockquote-footer {

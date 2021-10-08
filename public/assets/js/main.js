@@ -76,7 +76,7 @@ function outputMessage(message) {
     document.querySelector('.chat-messages').appendChild(div);
   } else {
     const figure = document.createElement('figure');
-    figure.classList.add('message', 'my-2');
+    figure.classList.add('message', 'my-2', 'message--hide');
     const blockquote = document.createElement('blockquote');
     figure.appendChild(blockquote);
     const p = document.createElement('p');
@@ -95,6 +95,9 @@ function outputMessage(message) {
       blockquote.classList.add('bg-primary');
     }
     document.querySelector('.chat-messages').appendChild(figure);
+    setTimeout(function() {
+      figure.classList.remove('message--hide');
+    }, 0);
   }
 }
 
