@@ -75,10 +75,15 @@ function outputMessage(message) {
     if (message.username == username) {
       figure.classList.add('message-client');
       blockquote.classList.add('bg-light');
+      var snd = new Audio(`/assets/audio/digi_plink.wav`);
+      snd.play();
     } else {
       figure.classList.add('message-user', 'text-light');
       blockquote.classList.add('bg-primary');
+      var snd = new Audio(`/assets/audio/pop_drip.wav`);
+      snd.play();
     }
+
     document.querySelector('.chat-messages').appendChild(figure);
     setTimeout(function() {
       figure.classList.remove('message--hide');
